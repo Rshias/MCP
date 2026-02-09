@@ -1,0 +1,24 @@
+env: metaworld_dial-turn-v2
+dataset: medium-replay
+data_quality: 3.0
+use_reward_model: true
+trivial_reward: 0
+
+# algorithm
+actor_lr: 1e-4
+critic_lr: 3e-4
+tau: 0.001
+alpha: 0.2
+auto_alpha: true
+alpha_lr: 3e-4
+batch_size: 512
+traj_batch_size: 256
+buffer_size: 10000000
+discount: 0.99
+eval_freq: 5000
+load_model: ''
+max_timesteps: 100000
+n_episodes: 100
+normalize: true
+normalize_reward: true
+
